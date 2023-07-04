@@ -1,0 +1,60 @@
+@import "./scss/layout/all.scss";
+@import "./scss/helpers/all.scss";
+
+body {
+    font-size: 16px;
+  }
+
+
+.container {
+    width: 100%;
+    position: relative;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+    &.space-between {
+      justify-content: space-between;
+    }
+
+  }
+  
+  .row-g {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  
+    @include xs {
+      background: purple;
+      @include size(40px, 100px);
+    }
+  
+    @include sm {
+      background: yellow;
+      @include size(40rem, 100px);
+    }
+  
+    @include md {
+      background: green;
+    }
+  
+    @include lg {
+      background: violet;
+    }
+  
+    @include xl {
+      background: orange;
+    }
+  }

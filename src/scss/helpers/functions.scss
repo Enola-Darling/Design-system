@@ -5,3 +5,24 @@ $basesize: 16px;
 @function rem($px) {
   @return math.div($px, $basesize) * 1rem;
 }
+
+// Funzione per scurire un colore
+@function darken($color, $amount) {
+  @return darken($color, $amount);
+}
+
+// Funzione per schiarire un colore
+@function lighten($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Funzione per regolare l'opacità di un colore
+@function alpha($color, $alpha) {
+  @return rgba($color, $alpha);
+}
+
+//columns
+$columnCount: 12;
+@function column($col) {
+  @return math.div(100%, $columnCount) * $col;
+}
