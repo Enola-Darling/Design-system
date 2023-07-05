@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import "./App.scss";
-
+import Button from './assets/components/button';
 
 function App() {
   return (
@@ -59,7 +59,11 @@ function App() {
         <div className="col-4">col4</div>
         <div className="col-8">col8</div>
       </div>
+      <div>
+        <Button label= "go to" outline size="xl"  />
+      </div>
     </div>
+    
   );
 }
 export default App;
