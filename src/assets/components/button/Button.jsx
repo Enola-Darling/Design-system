@@ -12,7 +12,7 @@ const Button = (props) => {
     ${size ? styles[size] : styles.md}
     ${square ? styles.square : styles.default}
     `}>
-      {label&& !square && label}
+      {label&& square && label}
     </div>
   )
 }

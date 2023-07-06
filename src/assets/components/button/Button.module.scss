@@ -9,6 +9,12 @@
   transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 
 
+  &.square {
+    border-radius: 10%;
+    width: rem(48px);
+    height: rem(48px);
+    
+  }
   &.fill {
     @include buttonFill(fill);
     &:hover {
@@ -35,9 +41,4 @@
     @include buttonSize(sm);
   }
 
-  &.square {
-    border-radius: 50%;
-    width: rem(48px);
-    height: rem(48px);
-  }
 }
