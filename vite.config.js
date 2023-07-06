@@ -15,7 +15,8 @@ export default defineConfig({
           @import "./src/scss/helpers/functions.scss";
           @import "./src/scss/components/button.scss";
           @import "./src/scss/layout/columns.scss";
-          
+          @import "./src/scss/variables/typography.scss";
+          @import "./src/scss/variables/layout.scss";
         `,
       },
     },
