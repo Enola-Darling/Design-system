@@ -3,6 +3,8 @@ import './App.css';
 import "./App.scss";
 import Button from './assets/components/button';
 import {InputText, InputPassword}from "./assets/components/Form";
+import Header from './assets/components/header';
+
 
 function App() {
   const [inputTextValue, setInputTextValue] = useState();
@@ -10,26 +12,29 @@ function App() {
   
   return (
     <div>
-      <>
-      <InputText 
-      name="name"
-      placeholder="Your Name" 
-      id={"name"} 
-      label={"name"}
-      errorMessage={"name"}
-      handleChange={setInputTextValue}
-      />
-      </>
-      <>
-      <InputPassword
-      name="password"
-      placeholder="Your password" 
-      id={"password"} 
-      label={"password"}
-      handleChange={setInputPasswordValue}
-      />
-      </>
-   </div>
+      <Header/>
+    </div>
+  //   <div>
+  //     <>
+  //     <InputText 
+  //     name="name"
+  //     placeholder="Your Name" 
+  //     id={"name"} 
+  //     label={"name"}
+  //     errorMessage={"name"}
+  //     handleChange={setInputTextValue}
+  //     />
+  //     </>
+  //     <>
+  //     <InputPassword
+  //     name="password"
+  //     placeholder="Your password" 
+  //     id={"password"} 
+  //     label={"password"}
+  //     handleChange={setInputPasswordValue}
+  //     />
+  //     </>
+  //  </div>
     
     // <div className="container">
     //   <div className="row-g">

@@ -1,0 +1,71 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $primary;
+    z-index: 10;
+  
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      padding: 0 20px;
+      
+    }
+  
+    .logo {
+      margin-right: 10px;
+    }
+  
+    .menu {
+      background-color: yellow;
+      display: flex;
+      align-items: center;
+      
+    }
+  
+    .menuItem {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+  
+      &__label {
+        cursor: pointer;
+        margin-right: 10px;
+  
+        &:hover {
+          color: $hoverColor;
+        }
+      }
+  
+      &__dropdown {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+  
+        &.open {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  
+    .menuItem:not(:last-child) {
+      margin-right: 10px;
+    }
+  
+    .actions {
+      margin-left: 10px;
+    }
+  
+    .subMenuItem {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
